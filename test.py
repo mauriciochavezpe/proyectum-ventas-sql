@@ -4,7 +4,7 @@ from ventas_totales import calcular_total
 
 def test_calcular_total_correcto():
     assert calcular_total(2, 5) == 10.0
-    assert calcular_total("3", "4.5") == 13.5  # acepta strings numéricos
+    assert calcular_total("3", "4.5") == 13.5
 
 def test_calcular_total_valores_invalidos():
     with pytest.raises(ValueError):
